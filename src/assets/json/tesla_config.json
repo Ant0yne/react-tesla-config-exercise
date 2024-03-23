@@ -1,0 +1,28 @@
+[
+	{
+		"title": "véhicule",
+		"buttons": [
+			{
+				"text": "Grande autonomie",
+				"price": 90700
+			},
+			{
+				"text": "Performance",
+				"price": 106700
+			}
+		]
+	},
+	{
+		"title": "couleur",
+		"buttons": [
+			{
+				"text": "Blanc nacré mulitcouches",
+				"price": 0
+			},
+			{
+				"text": "Noir Uni",
+				"price": 1000
+			}
+		]
+	}
+]
