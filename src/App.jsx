@@ -1,7 +1,8 @@
 import { useState } from "react";
 
 import Header from "./components/Header";
-import Selec from "./components/Selec";
+import Config from "./components/Config";
+import Buy from "./components/Buy";
 import Footer from "./components/Footer";
 
 import configs from "./assets/json/tesla_config.json";
@@ -14,7 +15,8 @@ function App() {
 	return (
 		<>
 			<Header />
-			<Selec result={result} setResult={setResult} />
+			<Config configs={configs} setResult={setResult} />
+			<Buy result={result} />
 			<Footer />
 		</>
 	);

@@ -27,6 +27,30 @@ h1 {
 	margin-bottom: 50px;
 }
 
+h2 {
+	font-size: 2rem;
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+h3 {
+	font-size: 2rem;
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+a {
+	text-decoration: none;
+	color: var(--black);
+}
+
+a,
+span {
+	font-weight: bold;
+}
+
 button {
 	font-family: "Roboto", sans-serif;
 	font-size: 2rem;
