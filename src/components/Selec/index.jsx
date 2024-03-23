@@ -16,6 +16,7 @@ const Selec = ({
 			<div>
 				<h2>Selectionnez {title}</h2>
 				<div>
+					{/* create a Choice component for each button in each item in the JSON */}
 					{buttons.map((button, i) => {
 						return (
 							<Choice

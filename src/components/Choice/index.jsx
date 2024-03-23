@@ -9,6 +9,12 @@ const Choice = ({
 }) => {
 	const { text, price } = button;
 
+	/**
+	 * change the value in the item corresponding to the selecIndex by the one from this button
+	 *
+	 * update the result with the add of all the value in selecIndex
+	 *
+	 */
 	const handleChoice = () => {
 		const tempArr = [...selecChoice];
 		tempArr[selecIndex].value = price;
