@@ -6,6 +6,9 @@ const Choice = ({
 	selecChoice,
 	setSelecChoice,
 	selecIndex,
+	index,
+	isSelec,
+	setIsSelec,
 }) => {
 	const { text, price } = button;
 
@@ -16,6 +19,16 @@ const Choice = ({
 	 *
 	 */
 	const handleChoice = () => {
+		const tempArrSelec = [...isSelec];
+		for (let i = 0; i < tempArrSelec.length; i++) {
+			console.log("test");
+			if (i === index) {
+				tempArrSelec[i] = true;
+			} else {
+				tempArrSelec[i] = false;
+			}
+		}
+		setIsSelec(tempArrSelec);
 		const tempArr = [...selecChoice];
 		tempArr[selecIndex].value = price;
 		setSelecChoice(tempArr);
@@ -28,8 +41,10 @@ const Choice = ({
 
 	return (
 		<>
-			<button onClick={handleChoice}>
-				{text} - {price}
+			<button
+				className={isSelec[index] === true ? "button-selected" : ""}
+				onClick={handleChoice}>
+				{text} - {price} €
 			</button>
 		</>
 	);

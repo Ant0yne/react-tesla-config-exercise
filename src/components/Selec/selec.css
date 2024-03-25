@@ -1,0 +1,13 @@
+.buttons {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	margin-bottom: 20px;
+}
+
+h2 {
+	font-size: 2rem;
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 10px;
+}

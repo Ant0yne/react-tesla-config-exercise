@@ -3,6 +3,7 @@
 :root {
 	--light-grey: #d3d3d3;
 	--white: #fff;
+	--selec: #3c71c0;
 	--black: #000;
 }
 
@@ -14,44 +15,18 @@ html {
 	font-size: 62.5%;
 }
 
+html::-webkit-scrollbar {
+	display: none;
+}
+
+html {
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+}
+
 body {
 	font-family: "Roboto", sans-serif;
 	font-size: 1.6rem;
 	line-height: 22px;
-}
-
-h1 {
-	font-size: 3rem;
-	text-align: center;
-	font-weight: bold;
-	margin-bottom: 50px;
-}
-
-h2 {
-	font-size: 2rem;
-	text-align: center;
-	font-weight: bold;
-	margin-bottom: 10px;
-}
-
-h3 {
-	font-size: 2rem;
-	text-align: center;
-	font-weight: bold;
-	margin-bottom: 10px;
-}
-
-a {
-	text-decoration: none;
-	color: var(--black);
-}
-
-a,
-span {
-	font-weight: bold;
-}
-
-button {
-	font-family: "Roboto", sans-serif;
-	font-size: 2rem;
+	padding: 10px;
 }

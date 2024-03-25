@@ -1,0 +1,10 @@
+main > div {
+	margin-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+	main > div {
+		width: 768px;
+		margin: 0 auto;
+	}
+}

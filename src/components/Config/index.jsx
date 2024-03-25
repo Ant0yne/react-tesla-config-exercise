@@ -1,10 +1,11 @@
 import { useState } from "react";
 
 import Selec from "../Selec";
+import Buy from "../Buy";
 
 import "./config.css";
 
-const Config = ({ configs, setResult }) => {
+const Config = ({ configs, setResult, result }) => {
 	// ARRAY -> objects with value for each config selected -> id:STRING value:NUMBER
 	const [selecChoice, setSelecChoice] = useState([]);
 
@@ -31,20 +32,23 @@ const Config = ({ configs, setResult }) => {
 	return (
 		<>
 			<main>
-				{/* create a component Selec for each item in JSON */}
-				{configs.map((config, i) => {
-					createSelecChoice(config, i);
-					return (
-						<Selec
-							config={config}
-							setResult={setResult}
-							selecChoice={selecChoice}
-							setSelecChoice={setSelecChoice}
-							selecIndex={i}
-							key={config.id}
-						/>
-					);
-				})}
+				<div className="container">
+					{/* create a component Selec for each item in JSON */}
+					{configs.map((config, i) => {
+						createSelecChoice(config, i);
+						return (
+							<Selec
+								config={config}
+								setResult={setResult}
+								selecChoice={selecChoice}
+								setSelecChoice={setSelecChoice}
+								selecIndex={i}
+								key={config.id}
+							/>
+						);
+					})}
+				</div>
+				<Buy result={result} />
 			</main>
 		</>
 	);

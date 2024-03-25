@@ -2,7 +2,6 @@ import { useState } from "react";
 
 import Header from "./components/Header";
 import Config from "./components/Config";
-import Buy from "./components/Buy";
 import Footer from "./components/Footer";
 
 // JSON with all the configs and their prices
@@ -17,8 +16,7 @@ function App() {
 	return (
 		<>
 			<Header />
-			<Config configs={configs} setResult={setResult} />
-			<Buy result={result} />
+			<Config configs={configs} setResult={setResult} result={result} />
 			<Footer />
 		</>
 	);

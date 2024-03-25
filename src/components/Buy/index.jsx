@@ -3,7 +3,7 @@ import "./buy.css";
 const Buy = ({ result }) => {
 	return (
 		<>
-			<h3>{result}</h3>
+			<h3>{result} €</h3>
 		</>
 	);
 };
