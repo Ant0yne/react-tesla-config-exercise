@@ -32,7 +32,7 @@ const Config = ({ configs, setResult, result }) => {
 	return (
 		<>
 			<main>
-				<div className="container">
+				<div>
 					{/* create a component Selec for each item in JSON */}
 					{configs.map((config, i) => {
 						createSelecChoice(config, i);
